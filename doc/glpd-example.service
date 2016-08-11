@@ -1,0 +1,10 @@
+[Unit]
+Description=Glp Peer-to-Peer Network Daemon
+ 
+[Service]
+Type=simple
+User=nobody
+ExecStart=/usr/bin/glpd --conf=/etc/glpd/glpd.cfg
+ 
+[Install]
+WantedBy=multi-user.target
